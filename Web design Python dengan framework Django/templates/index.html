@@ -1,0 +1,92 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{title}}</title>
+	<link rel="stylesheet" type="text/css" href="{% static "vendor/bootstrap/bootstrap.css" %}">
+	<link rel="stylesheet" type="text/css" href="{% static "css/styles.css" %}">
+</head>
+<body>
+	<nav class="navbar fixed-top navbar-expand-md navbar-dark" id="myNav">
+	  <a class="navbar-brand" href="#">
+	  		<img style="height:100px"src="{% static "img/Python-Transparent-Background.png" %}" alt="">
+	  </a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav ml-auto">
+	      	<li class="nav-item">
+	      		<a class="nav-link" href="/" title="">Home</a>
+	      	</li>
+	      	<li class="nav-item">
+	      		<a class="nav-link" href="/blog" title="">Blog</a>
+	      	</li>
+	      	<li class="nav-item">
+	      		<a class="nav-link" href="admin/" title="">Admin</a>
+	      	</li>
+	    </ul>
+	  </div>
+	</nav>
+	
+	<div class="jumbotron jumbotron-fluid">
+	  <div class="container text-white text-center">
+	    <h1 class="display-4">Bismillah</h1>
+ 	    <p class="lead">Selamat Datang di Home Page Web Python</p>
+	  </div>
+	</div>
+	<div class="container marketing">
+
+		<div><h1><u>ABOUT US</u></h1></div>
+		<P></P><P></P>
+        <!-- 3 foto about us -->
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="{% static "img/fatih.jpg" %}" alt="Generic placeholder image" width="140" height="140">
+            <h2>Ahmad Fatihin</h2>
+            <h7>11170930000059</h7>
+            <div class="content" style="text-align:left;">
+          		<div class="description" style="width:150;">Sistem Informasi 2017 Kelas 3B</div>
+          		<P></P>
+          		<div class="description" style="width:150;">
+            	
+            <p><b>ADMIN1</b></p>
+          </div>
+        </div>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="{% static "img/meow.jpg" %}" alt="Generic placeholder image" width="140" height="140">
+            <h2>Meow</h2>
+            <h7></h7>
+            <p></p>
+            <h7></h7>
+            <p><b> ADMIN2</b></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="{% static "img/meow2.jpg" %}" alt="Generic placeholder image" width="140" height="140">
+            <h2>Meow2</h2>
+            <h7></h7>
+            <p></p>
+            <h7></h7>
+            <p><b>ADMIN3</b></p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+
+	
+	<script src="{% static "vendor/jquery/jquery.js" %}" type="text/javascript"></script>
+	
+	<script src="{% static "vendor/popper/popper.js" %}" type="text/javascript"></script>
+
+	<script src="{% static "vendor/bootstrap/bootstrap.js" %}" type="text/javascript"></script>
+
+	<script src="{% static "js/scrolling.js" %}" type="text/javascript"></script>
+</body>
+</html>
+
+
+
+
+
+
+

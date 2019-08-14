@@ -1,0 +1,39 @@
+{% load static %}
+{{post.content|safe}}
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>
+		{% block Title %}
+		
+		{% endblock Title %}
+	</title>
+	<!--Tinymce Text-Editor (Must be in Head Tag) -->
+  	<script src="{% static "js/tinymce/tinymce.min.js" %}"></script>
+  	<script type="text/javascript" src="{% static "js/tinymce/custom.js" %}" ></script>
+	{% include "snippets/styles.html" %}
+
+</head>
+<body>
+	{{post.content|safe}}
+	{% include "snippets/navbar.html" %}
+	<div class="container" style="margin-top:150 px">
+		<h1>
+		{% block pageTitle %}
+			
+		{% endblock pageTitle %}
+		</h1>
+	</div>
+	
+	<div class="container bg-light shadow mt-5">
+		
+		{% block contents %}
+		
+		{% endblock contents %}	
+	</div>
+	
+	
+	{% include "snippets/scripts.html" %}
+</body>
+</html>
